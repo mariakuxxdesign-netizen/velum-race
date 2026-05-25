@@ -1,0 +1,64 @@
+[
+  {
+    "id": "lanzarote-race",
+    "title": "Test clinic",
+    "imageUrl": "/images/clinic-1.jpg",
+    "sessions": [
+      {
+        "id": "session-1",
+        "date": "17-22 february 2027",
+        "location": "Clinic & Race Arrecife | Lanzarote",
+        "url": "#"
+      },
+      {
+        "id": "session-2",
+        "date": "17-22 february 2026",
+        "location": "Clinic & Race Arrecife | Lanzarote",
+        "url": "#"
+      },
+      {
+        "id": "session-3",
+        "date": "17-22 february 2026",
+        "location": "Clinic & Race Arrecife | Lanzarote",
+        "url": "#"
+      },
+      {
+        "id": "session-4",
+        "date": "17-22 february 2026",
+        "location": "Clinic & Race Arrecife | Lanzarote",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": "garda-race",
+    "title": "Clinic title",
+    "imageUrl": "/images/clinic-2.jpg",
+    "sessions": [
+      {
+        "id": "session-5",
+        "date": "17-22 february 2026",
+        "location": "Clinic & Race Arrecife | Lanzarote",
+        "url": "#"
+      },
+      {
+        "id": "session-6",
+        "date": "17-22 february 2026",
+        "location": "Clinic & Race Arrecife | Lanzarote",
+        "url": "#"
+      },
+      {
+        "id": "session-7",
+        "date": "17-22 february 2026",
+        "location": "Clinic & Race Arrecife | Lanzarote",
+        "url": "#"
+      },
+      {
+        "id": "session-8",
+        "date": "17-22 february 2026",
+        "location": "Clinic & Race Arrecife | Lanzarote",
+        "url": "#"
+      }
+    ]
+  }
+]
