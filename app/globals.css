@@ -539,20 +539,6 @@ input {
   object-fit: cover;
 }
 
-.location span {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  display: grid;
-  width: 46px;
-  height: 46px;
-  place-items: center;
-  background: var(--ink);
-  color: white;
-  font-size: 30px;
-  font-weight: 700;
-}
-
 .location h3 {
   margin: 0 0 7px;
   color: var(--accent);

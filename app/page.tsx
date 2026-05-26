@@ -211,11 +211,10 @@ export default async function Home() {
         <div className="container">
           <h2 data-reveal>Locations</h2>
           <div className="location-list">
-            {locations.map((location, index) => (
+            {locations.map((location) => (
               <article className="location" key={location.title} data-reveal>
                 <div>
                   <img src={location.image} alt="" />
-                  <span>{index + 1}</span>
                 </div>
                 <section>
                   <h3>{location.title}</h3>
@@ -237,19 +236,10 @@ export default async function Home() {
         <div className="container">
           <p>© Velumrace 2025</p>
           <div aria-label="Social links">
-            <a href="https://chat.whatsapp.com/KAP1NAKWxXR1Tt0K3sttH2?mode=gi_t" aria-label="WhatsApp" rel="noreferrer" target="_blank">
-              <img src="/icons/whatsapp.svg" alt="" />
-            </a>
-            <a href="#" aria-label="Facebook">
+            <a href="https://facebook.com/Velumrace" aria-label="Facebook" rel="noreferrer" target="_blank">
               <img src="/icons/facebook.svg" alt="" />
             </a>
-            <a href="#" aria-label="Telegram">
-              <img src="/icons/telegram.svg" alt="" />
-            </a>
-            <a href="#" aria-label="Twitter">
-              <img src="/icons/twitter.svg" alt="" />
-            </a>
-            <a href="#" aria-label="Instagram">
+            <a href="https://www.instagram.com/velumrace" aria-label="Instagram" rel="noreferrer" target="_blank">
               <img src="/icons/instaagram.svg" alt="" />
             </a>
           </div>
