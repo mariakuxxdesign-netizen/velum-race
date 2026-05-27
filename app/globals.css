@@ -679,6 +679,19 @@ input {
   font-weight: 600;
 }
 
+textarea {
+  width: 100%;
+  min-height: 130px;
+  padding: 12px 16px;
+  border: 1px solid rgba(34, 47, 83, 0.25);
+  border-radius: 0;
+  color: var(--ink);
+  font: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  resize: vertical;
+}
+
 input[type="file"] {
   height: auto;
   min-height: 34px;
@@ -752,6 +765,151 @@ button:disabled {
   font-weight: 600;
 }
 
+.clinic-detail-hero {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  color: white;
+  background: var(--ink);
+}
+
+.clinic-detail-hero > img,
+.clinic-detail-hero__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.clinic-detail-hero > img {
+  object-fit: cover;
+}
+
+.clinic-detail-hero__overlay {
+  background: linear-gradient(180deg, rgba(13, 50, 151, 0.7), rgba(34, 47, 83, 0.86));
+}
+
+.clinic-detail-hero__content {
+  position: relative;
+  z-index: 1;
+  padding-top: 160px;
+}
+
+.clinic-detail-hero__content a {
+  display: inline-block;
+  margin-bottom: 36px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.clinic-detail-hero h1 {
+  max-width: 900px;
+  margin: 0 0 24px;
+  font-size: clamp(56px, 8vw, 112px);
+  font-weight: 600;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.clinic-detail-hero p {
+  margin: 0 0 8px;
+  font-size: clamp(22px, 2.4vw, 34px);
+  font-weight: 600;
+}
+
+.clinic-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 120px 0 80px;
+}
+
+.clinic-detail h2,
+.registration-section h2 {
+  margin: 0;
+  font-size: clamp(48px, 6vw, 86px);
+  font-weight: 600;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.clinic-detail dl {
+  display: grid;
+  gap: 8px;
+  margin: 36px 0 0;
+  font-size: 20px;
+}
+
+.clinic-detail dt {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.clinic-detail dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.clinic-detail__copy {
+  display: grid;
+  align-content: start;
+  gap: 22px;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.clinic-detail__copy p {
+  margin: 0;
+}
+
+.registration-section {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  gap: 50px;
+  padding: 0 0 120px;
+}
+
+.registration-section > div > p {
+  margin: 24px 0 0;
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.registration-form {
+  display: grid;
+  gap: 18px;
+  padding: 40px;
+  border: 1px solid rgba(34, 47, 83, 0.2);
+  background: white;
+}
+
+.registration-form__footer {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: space-between;
+}
+
+.form-message {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-message--success {
+  color: #0f7a38;
+}
+
+.form-message--error {
+  color: #a12a2a;
+}
+
 @media (max-width: 900px) {
   .container {
     width: min(100% - 32px, 720px);
@@ -763,7 +921,9 @@ button:disabled {
   .clinic-card,
   .elite,
   .location,
-  .field-row {
+  .field-row,
+  .clinic-detail,
+  .registration-section {
     grid-template-columns: 1fr;
   }
 
@@ -882,6 +1042,24 @@ button:disabled {
 
   .admin-card {
     padding: 24px;
+  }
+
+  .clinic-detail-hero {
+    min-height: 520px;
+  }
+
+  .clinic-detail,
+  .registration-section {
+    padding: 72px 0;
+  }
+
+  .registration-form {
+    padding: 24px;
+  }
+
+  .registration-form__footer {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 

@@ -38,3 +38,5 @@ ADMIN_PASSWORD=choose-a-private-password
 `ADMIN_PASSWORD` enables basic password protection for `/admin`. Without it, the admin page is open, which is only acceptable for local testing.
 
 Clinic images are uploaded to a public Supabase Storage bucket named `clinic-images`. The admin saves the uploaded public image URL in the `clinics.image_url` field.
+
+The `registrations` table stores submissions from individual clinic-date pages. Run the full `supabase.schema.sql` after schema changes so both `clinics` and `registrations` exist.

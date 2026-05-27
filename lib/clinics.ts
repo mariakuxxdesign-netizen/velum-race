@@ -82,6 +82,18 @@ export async function getClinics(): Promise<Clinic[]> {
   return getLocalClinics();
 }
 
+export async function getClinicSession(clinicId: string, sessionId: string) {
+  const clinics = await getClinics();
+  const clinic = clinics.find((item) => item.id === clinicId);
+  const session = clinic?.sessions.find((item) => item.id === sessionId);
+
+  if (!clinic || !session) {
+    return null;
+  }
+
+  return { clinic, session };
+}
+
 export async function saveClinics(clinics: Clinic[]): Promise<void> {
   const normalized = normalizeClinics(clinics);
 

@@ -172,7 +172,7 @@ export default async function Home() {
                     <li key={session.id}>
                       <strong>{session.date}</strong>
                       <span>{session.location}</span>
-                      <a href={session.url || "#"}>More info</a>
+                      <a href={`/clinics/${clinic.id}/${session.id}`}>More info</a>
                     </li>
                   ))}
                 </ul>
