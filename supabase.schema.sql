@@ -9,6 +9,8 @@ create table if not exists public.clinics (
 
 alter table public.clinics enable row level security;
 
+drop policy if exists "Public can read clinics" on public.clinics;
+
 create policy "Public can read clinics"
 on public.clinics
 for select

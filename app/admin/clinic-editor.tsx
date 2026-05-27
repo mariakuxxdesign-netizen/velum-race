@@ -96,6 +96,10 @@ export function ClinicEditor({ initialClinics }: ClinicEditorProps) {
           <div>
             <a href="/">← Back to site</a>
             <h1>Clinics</h1>
+            <nav className="admin-nav">
+              <a href="/admin">Clinics</a>
+              <a href="/admin/registrations">Registrations</a>
+            </nav>
           </div>
           <button onClick={save} disabled={isSaving}>
             {isSaving ? "Saving..." : "Save changes"}

@@ -605,6 +605,10 @@ input {
   margin: 0 auto;
 }
 
+.admin-shell--wide {
+  width: min(100%, 1180px);
+}
+
 .admin-header,
 .admin-card__title,
 .session-card__top,
@@ -623,6 +627,25 @@ input {
   color: var(--muted);
   font-size: 14px;
   text-decoration: none;
+}
+
+.admin-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.admin-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 8px 14px;
+  border: 1px solid rgba(34, 47, 83, 0.2);
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .admin-header h1,
@@ -761,6 +784,68 @@ button:disabled {
 
 .admin-message {
   margin: 20px 0 0;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.empty-state {
+  margin: 0;
+  color: var(--muted);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.registrations-list {
+  display: grid;
+  gap: 18px;
+}
+
+.registration-card {
+  padding: 30px;
+  border: 1px solid rgba(34, 47, 83, 0.2);
+  background: white;
+}
+
+.registration-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.registration-card h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 30px;
+  line-height: 1;
+}
+
+.registration-card__top p,
+.registration-card__top a {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.registration-card dl {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 10px 20px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.registration-card dt {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.registration-card dd {
+  margin: 0;
   color: var(--ink);
   font-weight: 600;
 }
@@ -1060,6 +1145,14 @@ button:disabled {
   .registration-form__footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .registration-card__top {
+    display: grid;
+  }
+
+  .registration-card dl {
+    grid-template-columns: 1fr;
   }
 }
 
