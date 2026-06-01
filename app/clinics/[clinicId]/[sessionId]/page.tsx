@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getClinicSession } from "@/lib/clinics";
+import { SiteFooter } from "@/app/site-footer";
 import { SiteHeader } from "@/app/site-header";
 import { RegistrationForm } from "./registration-form";
 
@@ -66,6 +67,7 @@ export default async function ClinicDetailsPage({ params }: ClinicDetailsPagePro
         </div>
         <RegistrationForm clinicId={clinic.id} sessionId={session.id} />
       </section>
+      <SiteFooter />
     </main>
   );
 }

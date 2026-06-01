@@ -3,11 +3,11 @@
 import { useState } from "react";
 
 const navItems = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About Us" },
-  { href: "#clinics", label: "Clinics" },
-  { href: "#locations", label: "Locations" },
-  { href: "#contact", label: "Contact Us" }
+  { href: "/#home", label: "Home" },
+  { href: "/#about", label: "About Us" },
+  { href: "/#clinics", label: "Clinics" },
+  { href: "/#locations", label: "Locations" },
+  { href: "/#contact", label: "Contact Us" }
 ];
 
 export function SiteHeader() {
@@ -15,7 +15,7 @@ export function SiteHeader() {
 
   return (
     <header className="nav">
-      <a className="brand" href="#home" aria-label="Velum Race home" onClick={() => setIsOpen(false)}>
+      <a className="brand" href="/#home" aria-label="Velum Race home" onClick={() => setIsOpen(false)}>
         <img src="/images/logo.svg" alt="" />
       </a>
 
