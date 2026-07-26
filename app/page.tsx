@@ -4,8 +4,6 @@ import { TelemetryHud } from "./telemetry-hud";
 
 const assets = {
   hero: "/images/hero.jpg",
-  about: "/images/meet-elena-vorobyeva.jpg",
-  coaching: "/images/elite-coaching.jpg",
   split: "/images/location-split.png",
   garda: "/images/location-campione.png",
   lanzarote: "/images/location-marina.png",
@@ -16,7 +14,7 @@ const clinicBenefits = [
   {
     icon: "/icons/onboard-demonstration.svg",
     title: "On-Board Demonstration:",
-    text: "Elena can step directly onto your boat to demonstrate the exact body mechanics, trim, and feel required for peak performance."
+    text: "On-board sessions demonstrate the exact body mechanics, trim, and feel required for peak performance."
   },
   {
     icon: "/icons/technical-mastery.svg",
@@ -31,11 +29,6 @@ const clinicBenefits = [
 ];
 
 const eliteBenefits = [
-  {
-    icon: "/icons/olumpic%20pedigree.svg",
-    title: "Olympic Pedigree:",
-    text: "Training is led by an Olympian with real podium-level experience."
-  },
   {
     icon: "/icons/zero-noise.svg",
     title: "Zero Noise:",
@@ -116,26 +109,6 @@ export default async function Home() {
             </p>
           </div>
         </div>
-        <div className="coach" data-reveal>
-          <img src={assets.about} alt="Elena Vorobeva sailing" />
-          <div>
-            <h3>Meet Elena Vorobeva</h3>
-            <dl>
-              <dt>Olympic Games:</dt>
-              <dd>LONDON 2012: 4th Place</dd>
-              <dt>TOKYO 2020:</dt>
-              <dd>12th Place</dd>
-              <dt>PARIS 2024:</dt>
-              <dd>6th Place</dd>
-              <dt>World Cup Series:</dt>
-              <dd>🥇 🥈 🥉 🥉</dd>
-              <dt>European Championships:</dt>
-              <dd>🥈 Silver Medalist | 4th | 8th</dd>
-              <dt>World Championships:</dt>
-              <dd>4th Place</dd>
-            </dl>
-          </div>
-        </div>
       </section>
 
       <TelemetryHud />
@@ -143,7 +116,6 @@ export default async function Home() {
       <section className="clinic-intro container" id="clinics" data-reveal>
         <div className="section-heading" data-reveal>
           <h2>Our clinics</h2>
-          <p>Our clinics are led by Elena Vorobeva, a three-time Olympian. Elena doesn't just coach from the ribs; she provides a hands-on technical masterclass.</p>
         </div>
         <div className="benefits">
           {clinicBenefits.map((benefit) => (
@@ -186,7 +158,6 @@ export default async function Home() {
       <section className="elite container" data-reveal>
         <div data-reveal>
           <h2>Elite coaching requires absolute focus</h2>
-          <img src={assets.coaching} alt="Laser sailing clinic" />
         </div>
         <div data-reveal>
           <p>

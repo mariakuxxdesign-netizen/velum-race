@@ -50,7 +50,7 @@ export default async function ClinicDetailsPage({ params }: ClinicDetailsPagePro
 
         <div className="clinic-detail__copy" data-reveal>
           <p>
-            This clinic is designed for sailors who want focused technical feedback, stronger race decisions and clearer boat-speed habits. Elena combines on-water observation, practical drills and individual calibration so every session has a measurable purpose.
+            This clinic is designed for sailors who want focused technical feedback, stronger race decisions and clearer boat-speed habits. The program combines on-water observation, practical drills and individual calibration so every session has a measurable purpose.
           </p>
           <p>
             Submit the form below and the team will follow up with availability, logistics and next steps for this specific clinic date.

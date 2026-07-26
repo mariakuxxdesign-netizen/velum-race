@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Velum Race",
-  description: "Elite sailing clinics with Elena Vorobeva.",
+  description: "Elite sailing clinics focused on technical progress and race performance.",
   icons: {
     icon: "/favicon.svg"
   }

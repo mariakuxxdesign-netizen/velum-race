@@ -178,7 +178,6 @@ input {
 }
 
 .section-heading,
-.coach,
 .elite,
 .location {
   display: grid;
@@ -206,41 +205,6 @@ input {
 .rich-copy p,
 .section-heading > p {
   margin: 0 0 20px;
-}
-
-.coach {
-  align-items: center;
-  margin-top: 50px;
-}
-
-.coach img {
-  width: 100%;
-  aspect-ratio: 574 / 483;
-  object-fit: cover;
-}
-
-.coach h3 {
-  margin: 0 0 24px;
-  font-size: clamp(44px, 4.2vw, 64px);
-  font-weight: 600;
-  line-height: 0.96;
-  text-transform: uppercase;
-}
-
-.coach dl {
-  margin: 0;
-  font-size: 20px;
-  line-height: 1.3;
-}
-
-.coach dt {
-  margin-top: 8px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.coach dd {
-  margin: 0;
 }
 
 .telemetry {
@@ -498,12 +462,6 @@ input {
   font-weight: 600;
   line-height: 0.96;
   text-transform: uppercase;
-}
-
-.elite > div:first-child > img {
-  width: 100%;
-  aspect-ratio: 574 / 360;
-  object-fit: cover;
 }
 
 .elite > div:last-child {
@@ -1002,7 +960,6 @@ button:disabled {
 
   .nav,
   .section-heading,
-  .coach,
   .clinic-card,
   .elite,
   .location,
